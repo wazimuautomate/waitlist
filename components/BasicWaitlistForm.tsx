@@ -70,8 +70,8 @@ export function BasicWaitlistForm({
             onChange={(event) => setPhone(event.target.value)}
             autoComplete="tel"
             inputMode="tel"
-            pattern="^(07|2547|\\+2547)[0-9]{8}$"
-            title="Use 07XXXXXXXX, 2547XXXXXXXX, or +2547XXXXXXXX"
+            pattern="^(0[17]|254[17]|\\+254[17])[0-9]{8}$"
+            title="Use 07XXXXXXXX, 01XXXXXXXX, 2547XXXXXXXX, 2541XXXXXXXX, +2547XXXXXXXX, or +2541XXXXXXXX"
             required
           />
         </label>
