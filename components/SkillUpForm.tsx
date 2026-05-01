@@ -81,7 +81,7 @@ export function SkillUpForm({
   const [selectedSkills, setSelectedSkills] = useState<string[]>(
     initialValue?.skills ?? [],
   );
-  const [error, setError] = useState(");
+  const [error, setError] = useState("");
   const [showSkip, setShowSkip] = useState(false);
 
   useEffect(() => {
@@ -119,7 +119,7 @@ export function SkillUpForm({
   return (
     <SectionFrame
       question="Which free digital skills do you want?"
-      description="Choose one or more. We'll connect you with free resources and tools."
+      description="Choose one or more. We’ll connect you with free resources and tools."
     >
       <form className="form-panel" onSubmit={handleSubmit}>
         <div className="field-stack">
@@ -145,8 +145,8 @@ export function SkillUpForm({
               onChange={(event) => setWhatsapp(event.target.value)}
               autoComplete="tel"
               inputMode="tel"
-              pattern="^(07|2547|\\+2547)[0-9]{8}$"
-              title="Use 07XXXXXXXX, 2547XXXXXXXX, or +2547XXXXXXXX"
+              pattern="^(0[17]|254[17]|\\+254[17])[0-9]{8}$"
+              title="Use 07XXXXXXXX, 01XXXXXXXX, 2547XXXXXXXX, 2541XXXXXXXX, +2547XXXXXXXX, or +2541XXXXXXXX"
               required
             />
           </label>
